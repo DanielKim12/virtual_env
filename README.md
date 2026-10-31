@@ -83,6 +83,24 @@ When users report complex system bugs, developers spend significant time setting
 ### Phase 4: Integration with ML Issue Tracker
 * [ ] Connect ClawSandbox to automatically pull top-ranked issues from the **ML-Powered Issue Tracking System** and attempt autonomous reproduction.
 
+
+### Future steps: 
+
+[User Drops Log File] 
+        │
+        ▼
+ 1. LOG INGESTION  ───► OpenClaw reads, sanitizes, and breaks down large logs.
+        │
+        ▼
+ 2. LOCAL TOOLING   ───► Agent dynamically writes & runs Python scripts inside the VM 
+        │                to filter timestamps, isolate stack traces, and count error frequencies.
+        │
+        ▼
+ 3. ANALYSIS PHASE ───► Agent searches its workspace documentation or runs local tools 
+        │                to match error patterns against known historical issues.
+        │
+        ▼
+[Final Report Delivered with Code Fix Suggestions]
 ---
 
 ## 🤝 Contribution & Team Roles
